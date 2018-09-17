@@ -1,0 +1,8 @@
+<div>
+  <form #form="ngForm">
+    <input name="id" [(ngModel)]="post.id" type="number" placeholder="Id"/>
+    <input name="titulo" [(ngModel)]="post.titulo" type="text" placeholder="Titulo"/>
+    <input name="cuerpo" [(ngModel)]="post.cuerpo" type="text" placeholder="Cuerpo"/>
+    <button (click)="guardar()" type="submit">Guardar</button>
+  </form>
+</div>
